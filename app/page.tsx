@@ -1,5 +1,5 @@
 import Image from "next/image";
-import DragAndDropBuilder from '../src/components/DragAndDropBuilder';
+import DragAndDropBuilder from '../src/components/Builder/DragAndDropBuilder';
 
 export default function Home() {
   return (
