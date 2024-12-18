@@ -1,0 +1,55 @@
+.drag-and-drop-builder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 200px;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+}
+
+.canvas {
+    flex-grow: 1;
+    border: 1px dashed #ccc;
+    min-height: 400px;
+    padding: 10px;
+    position: relative;
+}
+
+/* Responsive Design Styles */
+@media (max-width: 768px) {
+    .drag-and-drop-builder {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .canvas {
+        min-height: 300px;
+    }
+}
+
+@media (min-width: 769px) {
+    .drag-and-drop-builder {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sidebar {
+        width: 200px;
+        border-right: 1px solid #ccc;
+    }
+
+    .canvas {
+        flex-grow: 1;
+        border: 1px dashed #ccc;
+        min-height: 400px;
+        padding: 10px;
+        position: relative;
+    }
+}
